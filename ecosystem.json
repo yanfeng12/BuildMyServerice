@@ -3,8 +3,8 @@
     {
       "name": "Movie",
       "script": "app.js",
-			"output":"./out.log",
-			"error":"./error.log",
+			"output":"/dev/null",
+			"error":"/dev/null",
       "env": {
         "COMMON_VARIABLE": "true"
       },
