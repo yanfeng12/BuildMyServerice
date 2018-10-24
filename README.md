@@ -9,19 +9,19 @@ node app.js
 来启动项目
 
 ## 一。mongoDB 使用4.0以上版本，[安装教程](https://blog.csdn.net/sj2050/article/details/82838882)
-### 1、选择complete。
-### 2、Run service as Network Service user。
-### 3、Data Directory:  D:\data  
-### 4、Log Directory:  D:\log(尽量使用根目录)
-### 5、去掉Install MongoDB Compass。6、测试[](http://localhost:27017)
+ 1、选择complete。
+ 2、Run service as Network Service user。
+ 3、Data Directory:  D:\data  
+ 4、Log Directory:  D:\log(尽量使用根目录)
+ 5、去掉Install MongoDB Compass。6、测试[](http://localhost:27017)
 ## 二。安装grunt [grunt](https://blog.csdn.net/sinat_38992528/article/details/79400595)
 ## 三。使用bcryptjs代替bcrypt，我的电脑装不上bcrypt。
-### 1.bcryptjs是一个第三方密码加密库，是对原有bcrypt的优化，优点是不需要安装任何依赖
-### 2.引入bcryptjs库.npm install bcryptjs --save
+ 1.bcryptjs是一个第三方密码加密库，是对原有bcrypt的优化，优点是不需要安装任何依赖
+ 2.引入bcryptjs库.npm install bcryptjs --save
 ```
 var bcrypt = require('bcryptjs');
 ```
-### 3.同步用法(Sync)
+ 3.同步用法(Sync)
 ```
 //生成hash密码
 var bcrypt = require('bcryptjs');
@@ -39,7 +39,7 @@ bcrypt.compareSync("not_bacon", hash); // false
 //快速生成hash值
 var hash = bcrypt.hashSync('bacon', 8);
 ```
-### 4.异步用法(Async)
+ 4.异步用法(Async)
 ```
 //生成hash密码
 var bcrypt = require('bcryptjs');
