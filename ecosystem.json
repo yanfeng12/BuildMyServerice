@@ -3,8 +3,6 @@
     {
       "name": "Movie",
       "script": "app.js",
-			"log":"/dev/null",
-			"disable_logs":"true",
       "env": {
         "COMMON_VARIABLE": "true"
       },
