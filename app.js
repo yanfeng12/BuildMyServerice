@@ -60,5 +60,5 @@ app.listen(port)
 app.locals.moment = require('moment')
 app.use(express.static(path.join(__dirname, 'public')))
 
-console.log('imooc started on port ' + port)
+console.log('movie started on port ' + port)
 
