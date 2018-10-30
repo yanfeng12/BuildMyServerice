@@ -1,0 +1,29 @@
+{
+  "apps": [
+    {
+      "name": "Movie",
+      "script": "app.js",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "yanfeng12",
+      "host": ["47.94.150.38"],
+      "port": "22",
+      "ref": "origin/master",
+      "repo": "git@github.com:yanfeng12/BuildMyServerice.git",
+      "path": "/home/yanfeng12/www/movie/production",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "post-deploy": "npm install --registry=https://registry.npm.taobao.org && grunt build && pm2 startOrRestart ecosystem.json --env production",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
