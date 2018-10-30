@@ -74,3 +74,17 @@ bcrypt.hash('bacon', 8, function(err, hash) {
 ## 六、[电影展示功能](http://localhost:3001/admin/movie/list)
 ## 七、[电影录入功能](http://localhost:3001/admin/movie/new)
 ## 八、本项目使用grunt打包，运行时直接grunt
+## 九、jade报错you can use tabs or spaces but not both at Lexer.indent
+```
+      p.navbar-text.navbar-right
+        span 欢迎您,#{user.name}
+        span &nbsp;|&nbsp;
+        a.navbar-link(href="/logout") 登出	
+        span &nbsp;|&nbsp;
+        a.navbar-link(href="/admin/user/list") 用户列表
+        span &nbsp;|&nbsp;
+        a.navbar-link(href="/admin/movie/list") 电影展示
+        span &nbsp;|&nbsp;
+        a.navbar-link(href="/admin/movie/new") 电影录入
+```
+span和a.navbar-link前面要么都是空格  要么都是tab	。注意这两个不一样.
